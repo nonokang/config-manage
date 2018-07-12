@@ -1,0 +1,15 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: register-client
+
+#注册中心指向start
+eureka:
+  #instance:
+    #instance-id: spring-app
+    #appname: ${spring.application.name}
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8100/eureka/
