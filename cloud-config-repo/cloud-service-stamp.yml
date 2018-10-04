@@ -32,11 +32,11 @@ spring:
       password: root
       db-name: infinitus
       filters: log4j,wall,mergeStat
-  # redis:
-    # host: 119.23.143.93
-    # port: 6379
-    # password: 
-    # timeout: 5000
+  redis:
+    host: 192.168.111.122
+    port: 6379
+    password: 
+    timeout: 5000
 #  mvc:
 #    static-path-pattern: /static/**
 #    view:
