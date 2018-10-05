@@ -32,13 +32,13 @@ beetl:
 ###################  spring配置  ###################
 spring:
   datasource:
-      url: jdbc:mysql://119.23.143.93:3306/infinitus?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      url: jdbc:mysql://192.168.1.108:3306/infinitus?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
       username: root
-      password: fishgogogo
+      password: root
       db-name: infinitus
       filters: log4j,wall,mergeStat
   redis:
-    host: 119.23.143.93
+    host: 192.168.111.122
     # host: localhost
     port: 6379
     password:
@@ -92,9 +92,9 @@ mybatis-plus:
 infinitus:
   muti-datasource:
     default-dataSource-name: dataSourceSystem #默认的数据源名称
-    url: jdbc:mysql://119.23.143.93:3306/infinitus_flowable?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://192.168.1.108:3306/infinitus_flowable?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
-    password: fishgogogo
+    password: root
 
 logging:
   level.root: info
